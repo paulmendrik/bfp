@@ -1,5 +1,7 @@
+@import url('https://use.typekit.net/xdc5xeu.css');
+
 html {
-  background: #000000;
+  background: black !important;
   min-height: 100%;
   height: 100%;
   min-width: 100%;
@@ -9,20 +11,70 @@ html {
 }
 
 body {
-  background: #0C0C0C;
+  position: relative;
+  background: black !important;
   min-height: 100%;
   height: 100%;
   min-width: 100%;
   width: 100%;
   font-family: halyard-display, sans-serif;
-  font-size: 1rem ;
+  font-size: 1.125rem ;
   line-height: 1.1;
   color: #ffffff;
   overflow: visible;
 }
 
-.uk-container {
+canvas {
+  position: absolute;
+  top: 2.5% !important;
+  z-index: 500;
+
+}
+
+main .page {
+  position: relative;
+  height: 100vh !important;
+  z-index: 1000;
+}
+
+.content.intro {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+
+.content.intro p {
+  margin: 0 !important;
+  margin-top: 3rem !important;
+  font-family: halyard-display, sans-serif;
+  font-size: 1.125rem !important;
+  line-height: 2 !important;
+  color: #fff !important;
+}
+
+.button.intro {
+  background: black !important;
+  color: white !important;
+}
+
+.navbar,.footer {
   background: none !important;
+}
+
+.navbar-burger {
+  color: white !important;
+}
+
+.navbar-menu {
+  background-color: black !important;
+  box-shadow: none !important;
+}
+
+.navbar-menu a:hover{
+  background-color: black !important;
 }
 
 h1, h2,h3,H4,h5,h6,p {
@@ -38,7 +90,6 @@ a, a > *{
 * {
   box-sizing: border-box;
 }
-
 
 h1.logo {
   padding: 0;
@@ -70,18 +121,6 @@ p {
   color: white !important;
 }
 
-h1.heading {
-  font-size: 3rem !important;
-  font-weight: 500;
-  line-height: 1.5;
-  width: 100% !important;
-  text-align: left !important;
-}
-
-h3.title {
-  font-size: 2.25rem !important;
-  line-height: 1.2;
-}
 
 .content p {
   margin-bottom: 3rem !important;
@@ -105,4 +144,212 @@ h3.title {
 .navbar {
   margin-top: 2rem !important;
   margin-bottom: 4rem !important;
+}
+
+h1.title {
+  padding-bottom: 1rem !important;
+  margin-bottom: 1rem !important;
+  border-bottom: rgba(255,255,255,0.5) 1px solid !important;
+  font-size: 2.5rem !important;
+  font-weight: normal !important;
+  color: white !important;
+}
+
+.gallery {
+  padding-top: 4rem !important;
+}
+
+.card {
+  background: none !important;
+}
+
+.card-content {
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+.card-content h1.title {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  font-family: halyard-display, sans-serif;
+  font-size: 1.25rem !important;
+  line-height: 2 !important;
+  color: #fff !important;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0, 0.5);
+}
+
+.detail {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  background: black !important;
+  border: none !important;
+  font-size: 1.75rem !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.detail h1 {
+  margin: 2rem 0 !important;
+  padding-bottom: 1rem !important;
+  border-bottom: rgba(255,255,255,0.5) 1px solid !important;
+  font-size: 2.5rem !important;
+  font-weight: normal !important;
+  color: white !important;
+}
+
+.detail p {
+  margin-bottom: 0.75rem !important;
+  font-size: 1.25rem !important;
+  line-height: 1.25 !important;
+}
+
+.detail img {
+  margin: 0 auto;
+}
+
+.about {
+  font-size: 1.5rem !important;
+}
+
+.about h1.title {
+  padding-bottom: 1rem !important;
+  margin-bottom: 1rem !important;
+  margin-left: 0 !important;
+  border-bottom: rgba(255,255,255,0.5) 1px solid !important;
+  font-size: 2.5rem !important;
+  font-weight: normal !important;
+  color: white !important;
+}
+
+.feedback  img {
+  width: 100% !important;
+}
+
+.form {
+  margin-top: 3rem !important;
+}
+
+.comments h3, .form h3{
+  padding-bottom: 1rem !important;
+  margin-bottom: 1rem !important;
+  margin-left: 0.75rem !important;
+  border-bottom: rgba(255,255,255,0.5) 1px solid !important;
+  font-size: 1.75rem !important;
+  color: white !important;
+}
+
+.comment h4, .reply h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 400 !important;
+  font-size: 1.5rem !important;
+}
+
+.comment, .reply {
+  margin-bottom: 1rem !important;
+}
+
+.text {
+  font-size: 1.5rem !important;
+}
+
+p.date {
+  margin-bottom: 1rem !important;
+  font-size: 1.125rem !important;
+}
+
+.content h4 {
+  color: white !important;
+}
+
+form {
+  margin: 3rem 0 !important;
+}
+
+.label {
+  margin-top: 0.5rem !important;
+  font-weight: normal !important;
+  font-size: 1.125rem !important;
+  color: white !important;
+}
+
+.input, .textarea{
+  background: black !important;
+  border-color: rgba(255,255,255,0.4) !important;
+  color: white !important;
+}
+
+::placeholder {
+  color: white !important;
+}
+
+input[type=submit] {
+  background: black;
+  color: white;
+}
+
+.pagination {
+  display: block !important;
+  text-align: center !important;
+}
+
+.pagination ul.pagination-list {
+  padding-top: 2rem !important;
+  justify-content: center !important;
+  width: auto !important;
+}
+
+@media (max-width: 736px) {
+  .column.is-full-mobile {width: 50% !important;}
+}
+
+@media (max-width: 667px) {
+  .column.is-full-mobile {width: 50% !important;}
+}
+
+@media (max-width: 568px) {
+  .column.is-full-mobile {width: 100% !important;}
+}
+
+@media (max-width: 414px) {
+  .columns:first-of-type{ padding: 0 0.5rem !important;}
+  .detail{ padding: 0 0.5rem !important;}
+  .back {top: 0.5rem !important;}
+  .detail h1 { padding-bottom: 1rem !important;margin: 0 !important;margin-top: 2rem!important;margin-bottom: 1rem !important;font-size: 1.75rem !important;}
+  .column.is-full-mobile {width: 100% !important;}
+  .content.intro p { margin-top: 1rem !important; font-size: 1rem !important;}
+}
+
+@media (max-width: 375px) {
+  .columns:first-of-type{ padding: 0 0.5rem !important;}
+  .detail{ padding: 0 0.5rem !important;}
+  .back {top: 0.5rem !important;}
+  .detail h1 { padding-bottom: 1rem !important;margin: 0 !important;margin-top: 2rem!important;margin-bottom: 1rem !important;font-size: 1.75rem !important;}
+  .column.is-full-mobile {width: 100% !important;}
+  .content.intro p { margin-top: 1rem !important; font-size: 1rem !important;}
+}
+
+@media (max-width: 320px) {
+  .columns:first-of-type{ padding: 0 0.5rem !important;}
+  .detail{ padding: 0 0.5rem !important;}
+  .back {top: 0.5rem !important;}
+  .detail h1 { padding-bottom: 1rem !important;margin: 0 !important;margin-top: 2rem!important;margin-bottom: 1rem !important;font-size: 1.75rem !important;}
+  .column.is-full-mobile {width: 100% !important;}
+  .content.intro p { margin-top: 1rem !important; font-size: 1rem !important;}
 }

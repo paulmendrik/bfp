@@ -3,8 +3,15 @@ import React from "react";
 import { Button } from 'rbx';
 
 
-export default function Back() {
-    const router = useRouter()
+export default function Forward() {
+    const handleClick = (e) => {
+        var c = document.querySelectorAll('canvas');
+        c.remove
+        e.preventDefault()
+        router.push({pathname: '/gallery'})
+        router.reload()
+    }
 
-    return <Button className="button is-medium"><a onClick={() => router.push('/blog')}>Back</a></Button>
+    const router = useRouter()
+    return <Button className="button intro"><a onClick={handleClick}>Enter</a></Button>
 }

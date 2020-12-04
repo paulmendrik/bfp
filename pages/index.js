@@ -1,65 +1,33 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import {Column, Content, Navbar} from "rbx";
+import Forward from "../components/Forward";
+import React from "react";
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+      <main>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+          <title>Bill Funk Photography Intro</title>
+          <script src="https://imouse.net/js/tools.js" async></script>
+          <script src="https://imouse.net/js/script.js" async></script>
       </Head>
+          <Column.Group centered>
+              <Column size="two-thirds page">
+                  <Navbar>
+                      <Navbar.Brand><Navbar.Item href="/"><h1 className="logo">Bill Funk</h1></Navbar.Item></Navbar.Brand>
+                      <Navbar.Menu><Navbar.Segment align="end"></Navbar.Segment></Navbar.Menu>
+                  </Navbar>
+                  <Content className="intro">
+                     <Forward/>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+                          <p>&copy; Bill Funk Photography. All rights reserved.</p>
+                  </Content>
+              </Column>
+          </Column.Group>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+
+
   )
 }
