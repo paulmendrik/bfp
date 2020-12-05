@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import React from "react";
+import Link from "next/link";
 import { Button } from 'rbx';
 
 
@@ -13,5 +14,5 @@ export default function Forward() {
     }
 
     const router = useRouter()
-    return <Button className="button intro"><a onClick={handleClick}>Enter</a></Button>
+    return <Link href="/"><a className="button intro" onClick={handleClick}>Enter</a></Link>
 }
