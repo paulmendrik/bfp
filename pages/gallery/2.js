@@ -59,7 +59,7 @@ const Gallery = ({ photos }) => (
 export async function getServerSideProps() {
     const photos = await client.query(
         Prismic.Predicates.at('document.type', 'photo'),
-        { orderings : '[document.last_publication_date desc]' , pageSize : 24, page : 2},
+        { orderings : '[my.photo.key]' , pageSize : 23, page : 2 }
     )
 
     return { props: { photos } }
