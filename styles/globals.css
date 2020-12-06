@@ -24,11 +24,19 @@ body {
   overflow: visible;
 }
 
+.columns {
+  position: relative;
+}
+
 canvas {
   position: absolute;
   top: 2.5% !important;
   z-index: 500;
 
+}
+
+canvas.removed {
+  display: none !important;
 }
 
 main .page {
@@ -316,10 +324,14 @@ input[type=submit] {
 .pagination {
   display: block !important;
   text-align: center !important;
+  padding: 2rem 0 !important;
+  margin: 2rem 0 !important;
+  justify-content: flex-end !important;
+  width: 100% !important;
 }
 
 .pagination ul.pagination-list {
-  padding-top: 2rem !important;
+  margin: 0 auto !important;
   justify-content: center !important;
   width: auto !important;
 }
@@ -337,7 +349,6 @@ input[type=submit] {
 }
 
 @media (max-width: 414px) {
-  .columns:first-of-type{ padding: 0 0.5rem !important;}
   .detail{ padding: 0 0.5rem !important;}
   .back {top: 0.5rem !important;}
   .detail h1 { padding-bottom: 1rem !important;margin: 0 !important;margin-top: 2rem!important;margin-bottom: 1rem !important;font-size: 1.75rem !important;}
@@ -346,7 +357,6 @@ input[type=submit] {
 }
 
 @media (max-width: 375px) {
-  .columns:first-of-type{ padding: 0 0.5rem !important;}
   .detail{ padding: 0 0.5rem !important;}
   .back {top: 0.5rem !important;}
   .detail h1 { padding-bottom: 1rem !important;margin: 0 !important;margin-top: 2rem!important;margin-bottom: 1rem !important;font-size: 1.75rem !important;}
@@ -355,7 +365,6 @@ input[type=submit] {
 }
 
 @media (max-width: 320px) {
-  .columns:first-of-type{ padding: 0 0.5rem !important;}
   .detail{ padding: 0 0.5rem !important;}
   .back {top: 0.5rem !important;}
   .detail h1 { padding-bottom: 1rem !important;margin: 0 !important;margin-top: 2rem!important;margin-bottom: 1rem !important;font-size: 1.75rem !important;}

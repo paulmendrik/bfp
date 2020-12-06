@@ -11,7 +11,7 @@ import {Column, Content, Footer, Card, Image, Title, Pagination} from "rbx";
 const Gallery = ({ photos }) => (
 
 
-<Column.Group centered>
+<Column.Group className="is-mobile" centered>
 <Column size="four-fifths">
 
 <Head>
@@ -40,8 +40,6 @@ const Gallery = ({ photos }) => (
 </Column>
 ))}
 
-</Column.Group>
-
 <Pagination>
 <Pagination.List>
 <Pagination.Link><Link href="/gallery">1</Link></Pagination.Link>
@@ -50,6 +48,8 @@ const Gallery = ({ photos }) => (
 <Pagination.Link> <Link href="/gallery/4">4</Link></Pagination.Link>
 </Pagination.List>
 </Pagination>
+
+</Column.Group>
 
 </Column>
 </Column.Group>

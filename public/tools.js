@@ -339,17 +339,18 @@ var tools = function ()
 	}
 
 	return {
-			Stage:Stage,
+			/**Stage:Stage,**/
 			Mouse:Mouse,
 			Keyboard:Keyboard,
 			Tween:Tween,
-			Loop:Loop,
+			/**Loop:Loop,**/
 			Signal:Signal,
 			requestAnimationFrame:requestAnimationFrame,
 			cancelAnimationFrame:cancelAnimationFrame,
 		};
 }();
 
+/***
 var stage = new tools.Stage(800, 600);
 var loop = new Loop(onUpdate, this);
 loop.pause();
@@ -369,5 +370,6 @@ keyboard.onDown.add(onDown, this);
 keyboard.onUp.add(onKeyUp, this);
 keyboard.onUp.add(onKey32Up, this, 32);
 keyboard.isDown(33);
+***/
 
 
