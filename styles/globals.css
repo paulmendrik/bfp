@@ -146,10 +146,17 @@ p {
   color: #fff !important;
 }
 
+.about p  {
+  font-family: halyard-display, sans-serif;
+  font-size: 1.35rem !important;
+  line-height: 1.5 !important;
+  color: #fff !important;
+}
+
 .text p {
   font-family: halyard-display, sans-serif;
   font-size: 1.35rem !important;
-  line-height: 1.75rem !important;
+  line-height: 1.5rem !important;
   color: #fff !important;
 }
 

@@ -16,7 +16,7 @@ const Feedback = ({ feedback, comments }) => (
                     <img src={feedback.data.image.url} alt="Feedback image" />
                 </Column>
                 <Column className="text" size="full">
-                    {RichText.asText(feedback.data.text)}
+                    {RichText.render(feedback.data.text)}
                 </Column>
             </Column.Group>
             <Column.Group multiline centered>

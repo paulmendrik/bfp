@@ -14,7 +14,7 @@ const About = ({ about }) => (
         </Column>
         <Column className="about" size="two-thirds">
             <h1 className="title">About Me</h1>
-            {RichText.asText(about.data.text)}
+            {RichText.render(about.data.text)}
         </Column>
         </Column.Group>
         </Column>
