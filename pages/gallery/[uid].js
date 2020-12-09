@@ -7,7 +7,7 @@ import Back from "../../components/Back"
 
 const Photo = ({ photo }) => (
 
-<Column.Group centered>
+<Column.Group className="is-mobile" centered>
 <Column className="detail" size="two-thirds">
 <Back/>
 <Column.Group multiline centered>

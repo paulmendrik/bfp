@@ -24,6 +24,10 @@ body {
   overflow: visible;
 }
 
+em {
+  color: white !important;
+}
+
 .columns {
   position: relative;
 }
@@ -220,6 +224,8 @@ h1.title {
   font-size: 1.75rem !important;
   font-weight: bold !important;
   color: white !important;
+  cursor: pointer;
+  z-index: 3000 !important;
 }
 
 .detail h1 {
@@ -239,6 +245,7 @@ h1.title {
 
 .detail img {
   margin: 0 auto;
+  margin-top: 2rem !important;
 }
 
 .about {
@@ -349,7 +356,7 @@ input[type=submit] {
 }
 
 @media (max-width: 414px) {
-  .detail{ padding: 0 0.5rem !important;}
+  .detail {padding: 3rem 0 !important;}
   .back {top: 0.5rem !important;}
   .detail h1 { padding-bottom: 1rem !important;margin: 0 !important;margin-top: 2rem!important;margin-bottom: 1rem !important;font-size: 1.75rem !important;}
   .column.is-full-mobile {width: 100% !important;}
@@ -357,7 +364,7 @@ input[type=submit] {
 }
 
 @media (max-width: 375px) {
-  .detail{ padding: 0 0.5rem !important;}
+  .detail {padding: 3rem 0 !important;}
   .back {top: 0.5rem !important;}
   .detail h1 { padding-bottom: 1rem !important;margin: 0 !important;margin-top: 2rem!important;margin-bottom: 1rem !important;font-size: 1.75rem !important;}
   .column.is-full-mobile {width: 100% !important;}
@@ -365,7 +372,7 @@ input[type=submit] {
 }
 
 @media (max-width: 320px) {
-  .detail{ padding: 0 0.5rem !important;}
+  .detail {padding: 3rem 0 !important;}
   .back {top: 0.5rem !important;}
   .detail h1 { padding-bottom: 1rem !important;margin: 0 !important;margin-top: 2rem!important;margin-bottom: 1rem !important;font-size: 1.75rem !important;}
   .column.is-full-mobile {width: 100% !important;}
