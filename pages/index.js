@@ -9,6 +9,7 @@ export default function Home() {
       <main>
       <Head>
           <title>Bill Funk Photography Intro</title>
+          <link rel="manifest" href="/manifest.json" />
           <script src="https://imouse.net/js/tools.js" async></script>
           <script src="https://imouse.net/js/script.js" async></script>
       </Head>
