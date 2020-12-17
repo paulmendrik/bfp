@@ -21,7 +21,7 @@ const Feedback = ({ feedback, comments }) => (
             </Column.Group>
             <Column.Group multiline centered>
                 <Column size="full">
-                    <Form/>
+                 <Form/>
                     <SliceZone sliceZone={comments.data.body} />
                 </Column>
             </Column.Group>

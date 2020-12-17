@@ -1,27 +1,24 @@
 import React from 'react';
-import {Field, Label, Input, Textarea, Column} from "rbx";
+import {Button, Label, Input, Textarea, Column} from "rbx";
+
 
 
 const Form = () => (
-    <Column.Group centered>
-        <Column className="form" size="half">
-            <h3>Add A Comment</h3>
-    <form  action="https://formspree.io/f/xwkwqlge" method="post">
-    <Field id="fs-frm-inputs">
-    <Label>Full Name</Label>
-    <Input type="text" name="name" id="full-name" placeholder="Name" required />
-    <Label>Email Address</Label>
-    <Input type="email" name="_replyto" id="email-address" placeholder="email" required />
-    <Label>Message</Label>
-    <Textarea rows="5" name="message" id="message" placeholder="Message" required />
-    <Input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
-    </Field>
-        <Input className="button is-normal" type="submit" value="Submit" />
-    </form>
-        </Column>
-    </Column.Group>
 
-
+<Column.Group centered>
+<Column className="form" size="half">
+<h3>Add A Comment</h3>
+<form action="https://getform.io/f/cbef965c-d5cd-4864-8dd3-e90d0252d2ac" method="POST">
+<Label>Full Name</Label>
+<Input type="text" name="name"   placeholder="Name" required></Input>
+<Label>Email Address</Label>
+<Input type="email" name="email" placeholder="Email" required></Input>
+<Label>Message</Label>
+<Textarea type="textarea" rows="5" name="message"  placeholder="Message" required ></Textarea>
+<Input className="button" type="submit" value="Submit" ></Input>
+</form>
+</Column>
+</Column.Group>
 
 )
 

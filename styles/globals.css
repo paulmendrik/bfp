@@ -335,6 +335,11 @@ input[type=submit] {
   color: white;
 }
 
+button[type=submit] {
+  background: black;
+  color: white;
+}
+
 .pagination {
   display: block !important;
   text-align: center !important;
@@ -348,6 +353,23 @@ input[type=submit] {
   margin: 0 auto !important;
   justify-content: center !important;
   width: auto !important;
+}
+
+.lightbox {
+  z-index: 4000 !important;
+}
+
+.lightbox-toolbar {
+  background-color: black !important;
+  min-height: 4.25rem !important;
+  max-height: 4.25rem !important;
+}
+
+.lightbox-close {
+  max-height: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  min-width: 40px;
 }
 
 @media (max-width: 736px) {
