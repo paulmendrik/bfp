@@ -11,19 +11,14 @@ const Photo = ({ photo }) => (
 
 <Column.Group className="is-mobile" centered>
 <Column className="detail" size="two-thirds">
-<Head>
-<title>{RichText.asText(photo.data.title)}</title>
-<link rel="stylesheet" href="/lightbox.min.css" />
-<script src="/lightbox.js" ></script>
-
-</Head>
+<Head><title>{RichText.asText(photo.data.title)}</title></Head>
 <Back/>
 <Column.Group multiline centered>
 <Column size="full">
 <h1>{RichText.asText(photo.data.title)}</h1>
 {RichText.render(photo.data.content)}
 </Column>
-<Column className="image" size="full" data-action="lightbox">
+<Column className="image">
 <figure>
 <img className="has-ratio" src={photo.data.photo.url} alt={RichText.asText(photo.data.title)} />
 </figure>
