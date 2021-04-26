@@ -10,8 +10,6 @@ export default function Home() {
       <Head>
           <title>Bill Funk Photography Intro</title>
           <link rel="manifest" href="/manifest.json" />
-          <script src="https://imouse.net/js/tools.js" async></script>
-          <script src="https://imouse.net/js/script.js" async></script>
       </Head>
           <Column.Group centered>
               <Column size="two-thirds page">
@@ -19,6 +17,11 @@ export default function Home() {
                       <Navbar.Brand><Navbar.Item href="/"><h1 className="logo">Bill Funk</h1></Navbar.Item></Navbar.Brand>
                       <Navbar.Menu><Navbar.Segment align="end"></Navbar.Segment></Navbar.Menu>
                   </Navbar>
+                  <div class="blobs">
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                    </div>
                   <Content className="intro">
                      <Forward/>
 
