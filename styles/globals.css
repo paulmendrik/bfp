@@ -32,169 +32,9 @@ em {
   position: relative;
 }
 
-.blobs {
-  width: 280px;
-  height: 280px;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
-  border-radius: 100%;
-  -webkit-animation: myturn linear 16s infinite;
-  -moz-animation: myturn linear 16s infinite;
-}
-.blobs::after {
-    content: '';
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #7e8791;
-    position: relative;
-    display: block;
-  }
-
-  .blobs::before {
-    content: '';
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #e8f3f3;
-    position: absolute;
-     margin-top: -60px;
-    display: block;
-     -webkit-animation: littleOrbit linear 5s infinite;
-    -moz-animation: littleOrbit linear 5s infinite;
-    animation: littleOrbit linear 5s infinite;
-  }
-
-.blob {
-  position: absolute;
-  background: #557788;
-}
-
-.blob:nth-child(1) {
-  top: -10px;
-  left: -10px;
-  width: 250px;
-  height: 260px;
-  background: #557788;
-  border-radius: 100%;
-  -webkit-animation: mytopdown linear 3s infinite;
-  -moz-animation: mytopdown linear 3s infinite;
-  animation: mytopdown linear 3s infinite;
-}
-
-.blob:nth-child(2) {
-  top: 10px;
-  left: 10px;
-  background: #557788;
-  width: 250px;
-  height: 260px;
-  border-radius: 100%;
-  -webkit-animation: mytopleft linear 3s infinite;
-  -moz-animation: mytopleft linear 3s infinite;
-  animation: mytopleft linear 3s infinite;
-}
-
-.blob:nth-child(3) {
-  top: 10px;
-  left: -10px;
-  background: #557788;
-  width: 250px;
-  height: 260px;
-  border-radius: 100%;
-  -webkit-animation: mytopright linear 3s infinite;
-  -moz-animation: mytopright linear 3s infinite;
-  animation: mytopright linear 3s infinite;
-}
-
-
-@keyframes littleOrbit {
-   0% {
-    top: 10px;
-     opacity: 1;
-    transform: rotate(0deg) scale(1);
-  }
-
-    50% {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    top: -10px;
-      opacity: 0.3;
-    transform: rotate(180deg) scale(1.5);
-  }
-
-  100% {
-   top: 10px;
-      opacity: 1;
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-@keyframes mytopdown {
-  0% {
-    top: 0px;
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    top: 10px;
-    transform: rotate(180deg) scale(1.04);
-  }
-  100% {
-    top: 0px;
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-@keyframes mytopleft {
-  0% {
-    top: 0px;
-    transform: rotate(0deg) scale(1.05);
-  }
-  50% {
-    top: 10px;
-    transform: rotate(180deg) scale(1);
-  }
-  100% {
-    top: 0px;
-    transform: rotate(360deg) scale(1.05);
-  }
-}
-
-@keyframes mytopright {
-  0% {
-    top: -10px;
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    top: 0px;
-    transform: rotate(180deg) scale(1.02);
-  }
-  100% {
-    top: -10px;
-    transform: rotate(360deg) scale();
-  }
-}
-
-@-webkit-keyframes myturn {
-  0% {
-    -webkit-transform: rotate(0deg) skewX(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg) skewX(0deg);
-  }
-}
-
-
-canvas {
-  position: fixed;
-  width: 400px;
-  height: 400px;
-}
-
-canvas.removed {
-  display: none !important;
+.navbar-menu {
+  background: none !important;
+  background-color: transparent !important;
 }
 
 main .page {
@@ -203,25 +43,27 @@ main .page {
   z-index: 1000;
 }
 
-.content.intro {
-  display: block;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.footer > .content{
+  padding: 0;
+  width: 100% !important;
+}
 
-.content.intro p {
-  margin: 0 !important;
-  margin-top: 3rem !important;
+.footer > .content > p {
+  padding: 2rem 0;
   font-family: halyard-display, sans-serif;
-  font-size: 1.125rem !important;
-  line-height: 2 !important;
+  font-size: 0.95rem !important;
   color: #fff !important;
 }
 
 .button.intro {
+  display: inline-block !important;
   background: black !important;
   color: white !important;
 }
@@ -235,7 +77,6 @@ main .page {
 }
 
 .navbar-menu {
-  background-color: black !important;
   box-shadow: none !important;
 }
 
@@ -315,7 +156,7 @@ p {
 }
 
 .text p:first-of-type {
-  font-size: 1.75rem !important;
+  font-size: 1.25rem !important;
 }
 
 .navbar {
@@ -356,7 +197,6 @@ h1.title {
 }
 
 
-
 .card .overlay {
   position: absolute;
   top: 0;
@@ -366,9 +206,6 @@ h1.title {
   width: 100%;
   height: 100%;
   background-color: rgb(0,0,0, 0.5);
-}
-
-.card .image img {
 }
 
 .detail {
